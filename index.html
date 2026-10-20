@@ -21,7 +21,7 @@ src="https://www.facebook.com/tr?id=862354200095198&ev=PageView&noscript=1"
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOUTH MATKA - Download App</title>
+  <title>JAI MAHARASHTRA - Download App</title>
 
   <style>
     *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
@@ -60,9 +60,9 @@ src="https://www.facebook.com/tr?id=862354200095198&ev=PageView&noscript=1"
     }
 
     .fallbackText{
-      font-size:34px;
+      font-size:30px;
       font-weight:900;
-      letter-spacing:2px;
+      letter-spacing:1px;
       display:none;
     }
     .fallbackText span:first-child{color:#ff6a00;}
@@ -161,12 +161,22 @@ src="https://www.facebook.com/tr?id=862354200095198&ev=PageView&noscript=1"
       border-bottom:3px dotted #555;
     }
 
-    .waBtn{
-      background:linear-gradient(135deg,#0bbd4a,#2be06d);
+    /* TELEGRAM BUTTON */
+    .tgBtn{
+      background:linear-gradient(135deg,#0088cc,#229ed9);
       color:#fff;
-      box-shadow:0 8px 18px rgba(0,200,80,0.25);
+      box-shadow:0 8px 18px rgba(0,136,204,0.3);
     }
-    .waBtn:active{transform:scale(0.98);}
+    .tgBtn:active{transform:scale(0.98);}
+
+    /* FOOTER / ADS CREDIT */
+    .adsCredit{
+      margin-top:18px;
+      font-size:13px;
+      font-weight:700;
+      color:#777;
+      letter-spacing:0.5px;
+    }
   </style>
 </head>
 
@@ -175,13 +185,13 @@ src="https://www.facebook.com/tr?id=862354200095198&ev=PageView&noscript=1"
 
     <!-- LOGO -->
     <div class="logoWrap">
-      <img src="./logo.png" class="logoImg" id="logoImg" alt="South Matka Logo">
+      <img src="./logo.png" class="logoImg" id="logoImg" alt="Jai Maharashtra Logo">
       <div class="fallbackText" id="fallbackText">
-        <span>SOUTH</span> <span>MATKA</span>
+        <span>JAI</span> <span>MAHARASHTRA</span>
       </div>
     </div>
 
-    <h2>Welcome to <span>SouthMatka</span></h2>
+    <h2>Welcome to <span>Jai Maharashtra</span></h2>
 
     <div class="slider"></div>
 
@@ -197,18 +207,23 @@ src="https://www.facebook.com/tr?id=862354200095198&ev=PageView&noscript=1"
       ⬇️ Download App
     </button>
 
-    <div class="contact">Contact Us</div>
+    <div class="contact">Join Telegram</div>
     <div class="line"></div>
 
-    <!-- WHATSAPP BUTTON -->
-    <button class="btn waBtn" onclick="openWhatsApp()">
-      💬 WhatsApp
+    <!-- TELEGRAM BUTTON -->
+    <button class="btn tgBtn" onclick="openTelegram()">
+      ✈️ Join Telegram Channel
     </button>
+
+    <!-- ADS MANAGE CREDIT -->
+    <div class="adsCredit">
+      Ads Manage By Kunal
+    </div>
 
   </div>
 
   <script>
-    // ✅ Logo fallback fix
+    // Logo fallback fix
     const logoImg = document.getElementById("logoImg");
     const fallbackText = document.getElementById("fallbackText");
 
@@ -217,16 +232,14 @@ src="https://www.facebook.com/tr?id=862354200095198&ev=PageView&noscript=1"
       fallbackText.style.display = "block";
     };
 
-    // ✅ Download APK (same name as you showed)
+    // Download APK (Exact GitHub repository file name)
     function downloadAPK() {
-      window.location.href = "./SouthMatka.apk";
+      window.location.href = "./6ad5dfc32cea97.74731967_jaimaharashtra.apk";
     }
 
-    // ✅ WhatsApp Button
-    function openWhatsApp() {
-      const number = "9602276755";
-      const msg = encodeURIComponent("Hello South Matka, I want to download the app.");
-      window.location.href = `https://wa.me/${number}?text=${msg}`;
+    // Telegram Button Redirect
+    function openTelegram() {
+      window.location.href = "https://t.me/+1967_fXsr7VlMTQ1";
     }
   </script>
 </body>
