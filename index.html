@@ -1,209 +1,233 @@
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '862354200095198');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=862354200095198&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CA Nitin Murarka™</title>
-    
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1290835829493208');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1290835829493208&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOUTH MATKA - Download App</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(180deg, #050a30 0%, #000c66 50%, #081226 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      background: linear-gradient(135deg,#f4f4f4,#ffffff);
+    }
 
-        .card {
-            background-color: #111827;
-            width: 100%;
-            max-width: 400px;
-            padding: 35px 22px;
-            border-radius: 28px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-            border: 1px solid rgba(0, 178, 255, 0.25);
-        }
+    .card{
+      width:100%;
+      max-width:420px;
+      background:#fff;
+      border-radius:18px;
+      padding:22px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+      text-align:center;
+    }
 
-        .logo-container {
-            width: 110px;
-            height: 110px;
-            margin: 0 auto 15px;
-            border-radius: 50%;
-            background: #ffffff;
-            padding: 3px;
-            box-shadow: 0 0 20px rgba(0, 178, 255, 0.4);
-            overflow: hidden;
-        }
+    /* LOGO */
+    .logoWrap{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin-bottom:10px;
+    }
 
-        .logo-container img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+    .logoImg{
+      width:280px;
+      max-width:95%;
+      height:auto;
+      display:block;
+    }
 
-        h1 {
-            font-size: 22px;
-            margin-bottom: 4px;
-            font-weight: 700;
-            color: #ffffff;
-        }
+    .fallbackText{
+      font-size:34px;
+      font-weight:900;
+      letter-spacing:2px;
+      display:none;
+    }
+    .fallbackText span:first-child{color:#ff6a00;}
+    .fallbackText span:last-child{color:#1e66ff;}
 
-        .subscribers {
-            color: #9ca3af;
-            font-size: 13px;
-            margin-bottom: 20px;
-        }
+    h2{
+      font-size:22px;
+      margin:8px 0 16px;
+      font-weight:800;
+    }
+    h2 span{color:#d43b3b;}
 
-        .info-list {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 25px;
-            font-size: 14px;
-            line-height: 1.7;
-            color: #e5e7eb;
-        }
+    .slider{
+      width:100%;
+      height:14px;
+      background:#111;
+      border-radius:50px;
+      margin:10px 0 18px;
+      position:relative;
+      overflow:hidden;
+    }
+    .slider::before{
+      content:"";
+      position:absolute;
+      left:-40%;
+      top:0;
+      width:40%;
+      height:100%;
+      background:linear-gradient(90deg,transparent,#00ff88,transparent);
+      animation:slide 1.3s linear infinite;
+    }
+    @keyframes slide{
+      0%{left:-40%;}
+      100%{left:100%;}
+    }
 
-        .info-list div {
-            margin-bottom: 6px;
-        }
+    .dots{
+      display:flex;
+      justify-content:center;
+      gap:6px;
+      margin-bottom:16px;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:50%;
+      background:#bbb;
+    }
+    .dot.active{background:#ff6a00;}
 
-        .highlight {
-            color: #10b981;
-            font-weight: 700;
-        }
+    .btn{
+      width:100%;
+      padding:16px;
+      border:none;
+      border-radius:14px;
+      font-size:20px;
+      font-weight:800;
+      cursor:pointer;
+      margin:10px 0;
+      transition:0.2s;
+    }
 
-        /* Animated Glowing Telegram Button */
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(90deg, #0088cc, #00b2ff);
-            color: #ffffff;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 40px;
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 25px;
-            gap: 10px;
-            box-shadow: 0 0 20px rgba(0, 178, 255, 0.5);
-            animation: pulse 1.6s infinite ease-in-out;
-            cursor: pointer;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
+    /* DOWNLOAD BUTTON (BLINK + PULSE) */
+    .downloadBtn{
+      background:linear-gradient(135deg,#c90000,#ff3a3a);
+      color:#fff;
+      box-shadow:0 0 0 rgba(255,0,0,0.0);
+      animation:blinkPulse 0.7s infinite;
+    }
+    @keyframes blinkPulse{
+      0%{
+        transform:scale(1);
+        filter:brightness(1);
+        box-shadow:0 0 0 rgba(255,0,0,0.0);
+      }
+      50%{
+        transform:scale(1.03);
+        filter:brightness(1.25);
+        box-shadow:0 0 22px rgba(255,0,0,0.55);
+      }
+      100%{
+        transform:scale(1);
+        filter:brightness(1);
+        box-shadow:0 0 0 rgba(255,0,0,0.0);
+      }
+    }
 
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 15px rgba(0, 178, 255, 0.4);
-            }
-            50% {
-                transform: scale(1.03);
-                box-shadow: 0 0 30px rgba(0, 178, 255, 0.85);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 15px rgba(0, 178, 255, 0.4);
-            }
-        }
+    .downloadBtn:active{transform:scale(0.98);}
 
-        .footer-text {
-            font-size: 13px;
-            color: #9ca3af;
-            line-height: 1.6;
-        }
+    .contact{
+      margin:10px 0 8px;
+      font-weight:800;
+      color:#333;
+    }
+    .line{
+      width:90px;
+      margin:6px auto 14px;
+      border-bottom:3px dotted #555;
+    }
 
-        .footer-text a {
-            color: #49dcb1;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .footer-text a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .waBtn{
+      background:linear-gradient(135deg,#0bbd4a,#2be06d);
+      color:#fff;
+      box-shadow:0 8px 18px rgba(0,200,80,0.25);
+    }
+    .waBtn:active{transform:scale(0.98);}
+  </style>
 </head>
+
 <body>
+  <div class="card">
 
-<div class="card">
-    <div class="logo-container">
-        <img src="logo.png" alt="CA Nitin Murarka™">
+    <!-- LOGO -->
+    <div class="logoWrap">
+      <img src="./logo.png" class="logoImg" id="logoImg" alt="South Matka Logo">
+      <div class="fallbackText" id="fallbackText">
+        <span>SOUTH</span> <span>MATKA</span>
+      </div>
     </div>
 
-    <h1>CA Nitin Murarka™</h1>
-    <div class="subscribers">23,427 subscribers</div>
+    <h2>Welcome to <span>SouthMatka</span></h2>
 
-    <div class="info-list">
-        <div class="highlight">99% Accuracy ✅</div>
-        <div>💪🔥 India's best No.1 Stock Market Channel 🔥💪</div>
-        <div>📈 For #Nifty #Banknifty and #stocks calls. 🚀</div>
-        <div>Disclaimer:- WE ARE SEBI REGISTERED ✅</div>
-        <div>💪🔥 Daily Earn 20k-50k 🔥💪</div>
+    <div class="slider"></div>
+
+    <div class="dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
     </div>
 
-    <a href="https://t.me/+gTrXqpEJQrIxZmM9" class="btn" id="joinBtn" target="_blank" rel="noopener noreferrer">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="24" alt="TG">
-        Request to Join Channel
-    </a>
+    <!-- DOWNLOAD BUTTON -->
+    <button class="btn downloadBtn" onclick="downloadAPK()">
+      ⬇️ Download App
+    </button>
 
-    <div class="footer-text">
-        Contact Only For Ads Setup 👑<br>
-        Ads Managed By <a href="https://t.me/+jE7sEbzR23gwM2U1" target="_blank">Kunal</a>
-    </div>
-</div>
+    <div class="contact">Contact Us</div>
+    <div class="line"></div>
 
-<!-- Anti-Fake Click & Pixel Tracking Logic -->
-<script>
-    let isProcessing = false;
-    const joinBtn = document.getElementById('joinBtn');
+    <!-- WHATSAPP BUTTON -->
+    <button class="btn waBtn" onclick="openWhatsApp()">
+      💬 WhatsApp
+    </button>
 
-    joinBtn.addEventListener('click', function (e) {
-        // Prevent accidental double clicks / bot repeated triggers
-        if (isProcessing) {
-            e.preventDefault();
-            return false;
-        }
+  </div>
 
-        isProcessing = true;
+  <script>
+    // ✅ Logo fallback fix
+    const logoImg = document.getElementById("logoImg");
+    const fallbackText = document.getElementById("fallbackText");
 
-        // Accurate Meta Pixel Tracking Trigger
-        if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
-        }
+    logoImg.onerror = function () {
+      logoImg.style.display = "none";
+      fallbackText.style.display = "block";
+    };
 
-        // Lock button for 2 seconds to avoid fake spam clicks
-        setTimeout(function () {
-            isProcessing = false;
-        }, 2000);
-    });
-</script>
+    // ✅ Download APK (same name as you showed)
+    function downloadAPK() {
+      window.location.href = "./SouthMatka.apk";
+    }
 
+    // ✅ WhatsApp Button
+    function openWhatsApp() {
+      const number = "9602276755";
+      const msg = encodeURIComponent("Hello South Matka, I want to download the app.");
+      window.location.href = `https://wa.me/${number}?text=${msg}`;
+    }
+  </script>
 </body>
 </html>
